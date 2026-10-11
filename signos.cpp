@@ -21,4 +21,5 @@ int main() {
     std::cout << clasificarFrecuencia(frecuencia) << std::endl;
 
     return 0;
+
 }
