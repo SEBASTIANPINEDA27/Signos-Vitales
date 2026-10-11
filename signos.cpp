@@ -1,6 +1,18 @@
 #include <iostream>
 
+double fahrenheitACelsius(double f) {
+    return (f - 32.0) * 5.0 / 9.0;
+}
+
 int main() {
-    std::cout << "Este programa tratará sobre 2 aplicaciones, toma de temperatura y ritmo cardiaco";
+    double fahrenheit;
+
+    std::cout << "Ingrese la temperatura en grados Fahrenheit: ";
+    std::cin >> fahrenheit;
+
+    double celsius = fahrenheitACelsius(fahrenheit);
+
+    std::cout << fahrenheit << " F equivalen a " << celsius << " °C" << std::endl;
+
     return 0;
 }
